@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header id="nav-header">
+        <h1 id="nav-title">Control Structures in Java</h1>
+      </header>
+      <div id="div-links">
+        <a class ="nav-link" href="#Introduction"><p>Introduction</p></a>
+        <a class ="nav-link" href="#If/else/else_if"><p>If/else/else if</p></a>
+        <a class ="nav-link" href="#Switch"><p>Switch</p></a>
+        <a class ="nav-link" href="#Loops(for/while/for_each)"
+          ><p>Loops(for/while/for each)</p></a
+        >
+        <a class ="nav-link" href="#Break"><p>Break</p></a>
+        <a class ="nav-link" href="#Continue"><p>Continue</p></a>
+      </div>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header id="main-header"><p>Introduction</p></header>
+        <p class="main-text">
+          This tutorial will introduce Java control structures for programming
+          beginners. The content covered will be:
+        </p>
+        <ul id="intro-list">
+          <li>Conditional structure (if/else/else if).</li>
+          <li>Repetitive structures (for/while/for each).</li>
+          <li>Branching Statements (break/continue).</li>
+        </ul>
+      </section>
+      <br />
+      <section class="main-section" id="If/else/else_if">
+        <header id=""><p class="section-title">If/else/else if</p></header>
+        <p class="main-text">
+          Use the <code>if</code> statement to specify a block of Java code to
+          be executed if a condition is <code>true</code>.
+        </p>
+        <br />
+        <div class="code">
+          <pre><code> if (condition) {
+        x + y = 10;
+      }</code></pre>
+        </div>
+        <br />
+        <p class="main-text">
+          In the example above, when the condition inside the parentheses is
+          true, the algorithm will the <code>result</code> variable will receive
+          the sum <code>x + y</code>.
+        </p>
+        <br />
+        <p class="main-text">
+          Use the <code>else</code> statement to specify a block of code to be
+          executed if the condition is <code>false</code>.
+        </p>
+        <br />
+        <div class="code">
+          <pre><code> if (condition) {
+        result = x + y;
+      } else {
+        result = x - y;
+      }</code></pre>
+        </div>
+        <br />
+        <p class="main-text">
+          In this case, instead of the <code>result</code> variable receiving
+          the sum <code>x + y</code>, it will receive the subtraction
+          <code>x - y</code>, in case the condition is <code>false</code>;
+        </p>
+        <br />
+        <p class="main-text">
+          Use the <code>else if</code> statement to specify a new condition if
+          the first condition is <code>false</code>.
+        </p>
+        <br />
+        <div class="code">
+          <pre><code> if (condition1) {
+          result = x + y;
+        } else if (condition2) {
+          result = x * y;
+        } else {
+          result = x - y;
+        }</code></pre>
+        </div>
+        <br />
+        <p class="main-text">
+          in this third case, if <code>condition1</code> is
+          <code>false</code> and <code>condition2</code> is <code>true</code>,
+          the code will perform the multiplication <code>x * y</code>.
+        </p>
+        <br />
+      </section>
+      <section class="main-section" id="Switch">
+        <header id=""><p class="section-title">Switch</p></header>
+        <p class="main-text">
+          Use the <code>switch</code> statement to select one of many code
+          blocks to be executed. The switch condition is evaluated once, and
+          will be compared with each case value. If there is a match, the code
+          block associated with the case will be executed.
+        </p>
+        <br />
+        <br />
+        <div class="code">
+          <pre><code> int day = 4;
+            switch (day) {
+              case 1:
+                System.out.println("Monday");
+                break;
+              case 2:
+                System.out.println("Tuesday");
+                break;
+              case 3:
+                System.out.println("Wednesday");
+                break;
+              case 4:
+                System.out.println("Thursday");
+                break;
+              case 5:
+                System.out.println("Friday");
+                break;
+              case 6:
+                System.out.println("Saturday");
+                break;
+              case 7:
+                System.out.println("Sunday");
+                break;
+            }</code></pre>
+        </div>
+        <br />
+        <p class="main-text">
+          In the example above, the program will print <code>Thursday</code>.
+        </p>
+        <br />
+      </section>
+      <section class="main-section" id="Loops(for/while/for_each)">
+        <header id="">
+          <p class="section-title">Loops(for/while/for each)</p>
+        </header>
+        <p class="main-text">
+          The <code>while</code> loop loops through a block of code as long as a
+          specified condition is <code>true</code>:
+        </p>
+        <br />
+        <div class="code">
+          <pre><code> int i = 0;
+
+      while (i < 5) {
+      System.out.println(i);
+      i++;
+       }</code></pre>
+        </div>
+        <br />
+        <p class="main-text">
+          In the example below, the code in the loop will run, over and over
+          again, as long as a variable <code>i</code> is less than
+          <code>5</code>:
+        </p>
+        <br />
+        <p class="main-text">
+          When you know exactly how many times you want to loop through a block
+          of code, use the <code>for</code> loop instead of a
+          <code>while</code> loop.
+        </p>
+        <br />
+        <div class="code">
+          <pre><code> for (statement 1; statement 2; statement 3) {
+            // code block to be executed
+          }</code></pre>
+        </div>
+        <br />
+        <ul id="intro-list">
+          <li>
+            Statement 1 is executed (one time) before the execution of the code
+            block.
+          </li>
+          <li>
+            Statement 2 defines the condition for executing the code block.
+          </li>
+          <li>
+            Statement 3 is executed (every time) after the code block has been
+            executed.
+          </li>
+        </ul>
+        <br />
+        <br />
+        <p class="main-text">
+          The example below will print the numbers 0 to 4:
+        </p>
+        <br />
+        <div class="code">
+          <pre><code> for (int i = 0; i <= 10; i = i + 2) {
+            System.out.println(i);
+          }</code></pre>
+        </div>
+        <br />
+        <p class="main-text">
+          There is also a <code>for each</code> loop, which is used exclusively
+          to loop through elements in an <code>array</code>:
+        </p>
+        <br />
+        <div class="code">
+          <pre><code> for (type variableName : arrayName) {
+            // code block to be executed
+          }</code></pre>
+        </div>
+        <br />
+        <p class="main-text">
+          The following example outputs all elements in the
+          <code>cars array</code>, using a <code>for each</code> loop:
+        </p>
+        <br />
+        <div class="code">
+          <pre><code> String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+            for (String i : cars) {
+              System.out.println(i);
+            }</code></pre>
+        </div>
+        <br />
+      </section>
+      <section class="main-section" id="Break">
+        <header id="">
+          <p class="section-title">Break</p>
+        </header>
+        <p class="main-text">
+          The <code>break</code> statement is used to jump out of a loop. This
+          example stops the loop when i is equal to <code>4</code>:
+        </p>
+        <br />
+        <div class="code">
+          <pre><code> for (int i = 0; i < 10; i++) {
+            if (i == 4) {
+              break;
+            }
+            System.out.println(i);
+          }</code></pre>
+        </div>
+        <br>
+      </section>
+      <section class="main-section" id="Continue">
+        <header id="">
+          <p class="section-title">Continue</p>
+        </header>
+        <p class="main-text">The <code>continue</code> statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop. This example skips the value of 4:</p>
+        <br>
+        <div class="code">
+          <pre><code> int i = 0;
+            while (i < 10) {
+              if (i == 4) {
+                i++;
+                continue;
+              }
+              System.out.println(i);
+              i++;
+            }</code></pre>
+        </div>
+        <br>
+    </main>
+    <footer><pre>
+      <p class="main-text" style="color: #DFE0E2">Responsive Web Design for <a href="freecodecamp.org">freeCodeCamp</a> 
+WebSite made by Matheus Ferreira. Explanations and examples of content taken from the <a href="https://www.w3schools.com/">W3Schools</a> website.</p>
+    </footer></pre>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: 223, 224, 226;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+#navbar{
+    position: fixed;
+    width: 20vw;
+    height: 100%;   
+    border-right: 1px solid ;
+   
+}
+#nav-header{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+#nav-title{
+    
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 3px;
+    color: #DFE0E2;
+}
+
+#div-links{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+    
+}
+nav a{
+    height: 100%;
+    text-decoration: none;
+    color: #363f44;
+    border-bottom: 1px solid black;
+}
+nav p{
+    font-size: large;
+    position: relative;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+nav a:hover{
+    animation-name: linkhover;
+    animation-duration: 0.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes linkhover{
+    100%{
+        background-color: black;
+        color: #DFE0E2;
+    }
+}
+#main-doc{
+    position: relative;
+    left: 20vw;
+    width: 80%;
+
+}
+
+#main-header{
+    text-align: center;
+    height: 80px;
+}
+#main-header p{
+    font-size: 50px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#Introduction{
+    height: 20%;
+}
+.main-text{
+    position: relative;
+    text-align: justify;
+    width: 60vw;
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    left: 5%;
+    height: 20px;
+}
+#intro-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
+    width: 60vw;
+    top: 10px;
+    left: 8%;
+}
+.section-title{
+    height: 50px;
+    font-size: 35px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
+    left: 5%;
+    width: 30%;
+}
+code{
+    background-color: #DFE0E2;
+    font-size: smaller;
+}
+.code{
+    width: 40vw;
+    background-color: #DFE0E2;
+    position: relative;
+    left: 5%;
+}
+#for-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    font-size: 20px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    position: relative;
+    width: 60vw;
+    top: 10px;
+    left: 8%;
+}
+footer{
+    position: relative;
+    left: 20vw;
+    width: 80vw;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+}
+footer a{
+    color: #c72e2e;
+}
+@media(max-width: 950px){
+    .main-text{
+        font-size: 15px;
+    }
+    #intro-list{
+        font-size: 15px;
+    }
+}
